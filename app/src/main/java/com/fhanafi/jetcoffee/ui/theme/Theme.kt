@@ -1,6 +1,5 @@
 package com.fhanafi.jetcoffee.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -15,14 +14,21 @@ import androidx.compose.ui.platform.LocalContext
 private val DarkColorScheme = darkColorScheme(
     primary = LightCoffeeBrown,
     secondary = LightCoffeeBrown,
-    tertiary = Pink80
+    secondaryContainer = LightCoffeeBrown,
+    onSecondaryContainer = CoffeeBrown,
+    onSurface = LightCoffeeBrown,
+    onSurfaceVariant = LightCoffeeBrown
+
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = CoffeeBrown,
     secondary = CoffeeBrown,
-    background = Color.White,
-    tertiary = Pink40
+    secondaryContainer = LightCoffeeBrown,
+    onSecondaryContainer = CoffeeBrown,
+    onSurface = CoffeeBrown,
+    onSurfaceVariant = LightGray,
+    background = Color.White
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
